@@ -1,6 +1,6 @@
 
 # Personal Expenses App
-
+![Screenshots from Application](https://i.ibb.co/Qm6JrZ1/IMG-20200825-161015.jpg)
 Personal Expenses is a handy app which can be quite helpful for students for managing their expenses. It also has a chart which displays expenses in the last 7 days.
 
 **Features to be added:**
