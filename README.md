@@ -1,6 +1,16 @@
-# expenses_app
 
-A new Flutter project.
+# Personal Expenses App
+
+Personal Expenses is a handy app which can be quite helpful for students for managing their expenses. It also has a chart which displays expenses in the last 7 days.
+
+**Features to be added:**
+ - [x] Edit a record
+ - [x] Delete a record
+ - [x] About section (because, why not ;p)
+ - [ ] Pie Chart
+ - [ ] Navigation
+ - [ ] Open a record in new Screen
+ - [ ] Add categories
 
 ## Getting Started
 
