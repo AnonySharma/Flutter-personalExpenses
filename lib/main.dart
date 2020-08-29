@@ -108,14 +108,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _editTransaction(id) {
-    setState(() {
-      Transaction temp;
-      for (var i = 0; i < _userTransactions.length; i++) {
-        if (_userTransactions[i].id==id) {
-          temp = _userTransactions[i];
-          break;
-        }
+    Transaction temp;//=_userTransactions.where((element) => element.id==id) as Transaction;
+    for (var i = 0; i < _userTransactions.length; i++) {
+      if (_userTransactions[i].id==id) {
+        temp = _userTransactions[i];
+        break;
       }
+    }
+    setState(() {
       _startEditTransaction(context, temp);
     });
   }
@@ -132,6 +132,32 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     );
   }
+
+  // OFFICIAL ABOUT SECTION
+
+  //   void _showAboutDialog2() {
+  //   showAboutDialog(
+  //       context: context,
+  //       applicationName: 'Expenses_App',
+  //       applicationIcon: FlutterLogo(),//Image.asset('./assets/launcher/icon.png'),
+  //       applicationVersion: '1.4.9',
+  //       children: [
+  //         Text(
+  //           'This is a personal expenses app.It can be used to manage your expenses for the curent week. Hope you will like it.',
+  //           style: TextStyle(fontWeight: FontWeight.bold),
+  //         ),
+  //         Row(
+  //           mainAxisAlignment: MainAxisAlignment.end,
+  //           children: [
+  //             IconButton(icon: Icon(Icons.copyright), onPressed: null),
+  //             Text(
+  //               'Ankit Kumar Sharma',
+  //               style: TextStyle(fontWeight: FontWeight.bold),
+  //             ),
+  //           ],
+  //         )
+  //       ]);
+  // }
 
   Future _showAboutDialog() {
     return showDialog(
